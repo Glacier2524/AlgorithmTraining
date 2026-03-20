@@ -65,12 +65,16 @@ int main()
 
 
 	pair<set<int>::iterator, bool>ret = s1.insert(50); //if element already exist,return false
-	if (ret.second) //second means value
+	if (ret.second) //second value,here is bool
 	{
-		cout << "inserted" << emd;
+		cout << "inserted" << endl;
 	}
 
+	pair<string, int>p("tom", 20); //pair can be used to store two values
+	cout << p.first << p.second << endl;
 
+	pair<string, int>p2 = make_pair("jack", 30);//make_pair function
+	cout << p2.first << p2.second << endl;
 
-
+	return 0;
 }
